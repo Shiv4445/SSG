@@ -14,3 +14,8 @@ mobileLinks.forEach(link => {
         menu.classList.add('hidden');
     });
 });
+const message = "Hi, I am interested in the property at Scheme 4, Narayan Vihar. Please share more details.";
+const phone = "919876543210";
+
+document.getElementById("waBtn").href =
+  `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
